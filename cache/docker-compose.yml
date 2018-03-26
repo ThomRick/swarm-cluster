@@ -1,20 +1,19 @@
 version: "3"
 services:
-  portainer:
-    image: portainer/portainer
+  redis:
+    image: redis:3-alpine
     networks:
       - proxy
     volumes:
-      - "/var/run/docker.sock:/var/run/docker.sock"
-      - "/opt/portainer:/data"
+      - "/opt/redis:/data"
     deploy:
       replicas: 1
       placement:
         constraints: [node.role == manager]
       labels:
         - "traefik.enable=true"
-        - "traefik.port=9000"
-        - "traefik.frontend.rule=Host:local.portainer.com"
+        - "traefik.port=6379"
+        - "traefik.frontend.rule=Host:local.redis.com"
 networks:
   proxy:
     external:

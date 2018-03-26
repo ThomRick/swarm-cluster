@@ -1,0 +1,288 @@
+{
+	"name": "@nestjs/schematics",
+	"versions": {
+		"0.0.0": {
+			"name": "@nestjs/schematics",
+			"version": "0.0.0",
+			"description": "Nestjs schematics project for @nestjs/cli",
+			"main": "index.js",
+			"publishConfig": {
+				"access": "public"
+			},
+			"scripts": {
+				"build": "tsc --project tsconfig.json",
+				"lint:src": "tslint --project tsconfig.json",
+				"lint:test": "tslint --project test/tsconfig.json",
+				"test": "mocha test/**/*.ts --require ts-node/register"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/ThomRick/nest-cli-schematics.git"
+			},
+			"author": {
+				"name": "ThomRick"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/ThomRick/nest-cli-schematics/issues"
+			},
+			"homepage": "https://github.com/ThomRick/nest-cli-schematics#readme",
+			"dependencies": {
+				"@angular-devkit/core": "0.0.29",
+				"@angular-devkit/schematics": "0.0.52"
+			},
+			"devDependencies": {
+				"@types/chai": "^4.1.2",
+				"@types/mocha": "^2.2.48",
+				"@types/node": "^9.4.0",
+				"chai": "^4.1.2",
+				"mocha": "^5.0.0",
+				"ts-lint": "^4.5.1",
+				"ts-node": "^4.1.0",
+				"typescript": "^2.7.1"
+			},
+			"_id": "@nestjs/schematics@0.0.0",
+			"_npmVersion": "5.6.0",
+			"_nodeVersion": "8.9.4",
+			"_npmUser": {
+				"name": "thomrick",
+				"email": "thomasr2309@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-SUjQ+5NlZhu+FopDNrNgEfQrEETyA11hEC4gghC8FRMbDje6WYSVewk1VpnXewlvc84NUkKBTQpOUg40G9rceQ==",
+				"shasum": "0b260fa0928949000a327b11e622dd2d94a0a05a",
+				"tarball": "https://registry.npmjs.org/@nestjs/schematics/-/schematics-0.0.0.tgz",
+				"fileCount": 14,
+				"unpackedSize": 5164
+			},
+			"maintainers": [
+				{
+					"name": "kamilmysliwiec",
+					"email": "mail@kamilmysliwiec.com"
+				},
+				{
+					"name": "nestjscore",
+					"email": "admin@kamilmysliwiec.com"
+				},
+				{
+					"name": "thomrick",
+					"email": "thomasr2309@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/schematics_0.0.0_1519471961094_0.2265187669289339"
+			}
+		},
+		"1.0.0-rc.1": {
+			"name": "@nestjs/schematics",
+			"version": "1.0.0-rc.1",
+			"description": "Nestjs schematics project for @nestjs/cli",
+			"main": "index.js",
+			"publishConfig": {
+				"access": "public"
+			},
+			"scripts": {
+				"build": "tsc --project tsconfig.json",
+				"lint:src": "tslint --project tsconfig.json",
+				"lint:test": "tslint --project test/tsconfig.json",
+				"test": "nyc mocha test/**/*.ts --require ts-node/register"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/ThomRick/nest-cli-schematics.git"
+			},
+			"author": {
+				"name": "ThomRick"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/ThomRick/nest-cli-schematics/issues"
+			},
+			"homepage": "https://github.com/ThomRick/nest-cli-schematics#readme",
+			"dependencies": {},
+			"devDependencies": {
+				"@angular-devkit/core": "^0.4.2",
+				"@angular-devkit/schematics": "^0.4.2",
+				"@types/chai": "^4.1.2",
+				"@types/mocha": "^2.2.48",
+				"@types/node": "^9.4.0",
+				"chai": "^4.1.2",
+				"mocha": "^5.0.0",
+				"nyc": "^11.4.1",
+				"ts-lint": "^4.5.1",
+				"ts-node": "^4.1.0",
+				"typescript": "^2.7.1"
+			},
+			"schematics": "./collection.json",
+			"nyc": {
+				"include": [
+					"src"
+				],
+				"exclude": [
+					"node_modules",
+					"test"
+				],
+				"extension": [
+					".ts"
+				],
+				"require": [
+					"ts-node/register"
+				],
+				"reporter": [
+					"text-summary",
+					"html"
+				],
+				"sourceMap": true,
+				"instrument": true
+			},
+			"_id": "@nestjs/schematics@1.0.0-rc.1",
+			"_npmVersion": "5.6.0",
+			"_nodeVersion": "8.9.4",
+			"_npmUser": {
+				"name": "thomrick",
+				"email": "thomasr2309@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-3okJ5sBwvDibEh1BpneboL630mNC5RQPhOpX/3vxQ/fKPNlo67ELhoBbi0cywHJPac8oWy0seV14Fibse3vAgw==",
+				"shasum": "dc54b62fb740955b14b81cc1a00fa10adb04e5c6",
+				"tarball": "https://registry.npmjs.org/@nestjs/schematics/-/schematics-1.0.0-rc.1.tgz",
+				"fileCount": 32,
+				"unpackedSize": 13362
+			},
+			"maintainers": [
+				{
+					"name": "kamilmysliwiec",
+					"email": "mail@kamilmysliwiec.com"
+				},
+				{
+					"name": "nestjscore",
+					"email": "admin@kamilmysliwiec.com"
+				},
+				{
+					"name": "thomrick",
+					"email": "thomasr2309@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/schematics_1.0.0-rc.1_1519815334780_0.6398852455140545"
+			}
+		},
+		"1.0.0-rc.2": {
+			"name": "@nestjs/schematics",
+			"version": "1.0.0-rc.2",
+			"description": "Nestjs schematics project for @nestjs/cli",
+			"main": "index.js",
+			"publishConfig": {
+				"access": "public"
+			},
+			"scripts": {
+				"build": "tsc --project tsconfig.json",
+				"lint:src": "tslint --project tsconfig.json",
+				"lint:test": "tslint --project test/tsconfig.json",
+				"test": "nyc mocha test/**/*.ts --require ts-node/register"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/ThomRick/nest-cli-schematics.git"
+			},
+			"author": {
+				"name": "ThomRick"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/ThomRick/nest-cli-schematics/issues"
+			},
+			"homepage": "https://github.com/ThomRick/nest-cli-schematics#readme",
+			"dependencies": {},
+			"devDependencies": {
+				"@angular-devkit/core": "^0.4.2",
+				"@angular-devkit/schematics": "^0.4.2",
+				"@types/chai": "^4.1.2",
+				"@types/mocha": "^2.2.48",
+				"@types/node": "^9.4.0",
+				"chai": "^4.1.2",
+				"mocha": "^5.0.0",
+				"nyc": "^11.4.1",
+				"ts-lint": "^4.5.1",
+				"ts-node": "^4.1.0",
+				"typescript": "^2.7.1"
+			},
+			"schematics": "./collection.json",
+			"nyc": {
+				"include": [
+					"src"
+				],
+				"exclude": [
+					"node_modules",
+					"test"
+				],
+				"extension": [
+					".ts"
+				],
+				"require": [
+					"ts-node/register"
+				],
+				"reporter": [
+					"text-summary",
+					"html"
+				],
+				"sourceMap": true,
+				"instrument": true
+			},
+			"readmeFilename": "README.md",
+			"gitHead": "71235d3e517a07d2ea8cdbabe400c2913d40c5e4",
+			"_id": "@nestjs/schematics@1.0.0-rc.2",
+			"_npmVersion": "5.7.1",
+			"_nodeVersion": "8.9.0",
+			"_npmUser": {},
+			"dist": {
+				"integrity": "sha512-TbMA8hMr48fOefOauPTgeCLCLjVg2g8zXvAADM73lLlyB7PlDnl2mvUokazOYRSDGi/cIVmGORQVw+p+HZ5DLA==",
+				"shasum": "3119e5f8fe0ae3f942e38371803cf85989117d01",
+				"tarball": "http://local.npm.com/@nestjs/schematics/-/@nestjs/schematics-1.0.0-rc.2.tgz"
+			}
+		}
+	},
+	"dist-tags": {
+		"latest": "1.0.0-rc.2"
+	},
+	"time": {
+		"created": "2018-02-24T11:32:41.024Z",
+		"0.0.0": "2018-02-24T11:32:41.191Z",
+		"modified": "2018-03-25T20:03:32.627Z",
+		"1.0.0-rc.1": "2018-02-28T10:55:34.833Z",
+		"1.0.0-rc.2": "2018-03-25T20:03:32.627Z"
+	},
+	"_distfiles": {
+		"schematics-0.0.0.tgz": {
+			"url": "https://registry.npmjs.org/@nestjs/schematics/-/schematics-0.0.0.tgz",
+			"sha": "0b260fa0928949000a327b11e622dd2d94a0a05a",
+			"registry": "npmjs"
+		},
+		"schematics-1.0.0-rc.1.tgz": {
+			"url": "https://registry.npmjs.org/@nestjs/schematics/-/schematics-1.0.0-rc.1.tgz",
+			"sha": "dc54b62fb740955b14b81cc1a00fa10adb04e5c6",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"schematics-1.0.0-rc.1.tgz": {
+			"shasum": "b15d584661f5a4cb741e64f9eae4a20aa97773d8"
+		},
+		"schematics-1.0.0-rc.2.tgz": {
+			"shasum": "3119e5f8fe0ae3f942e38371803cf85989117d01",
+			"version": "1.0.0-rc.2"
+		}
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"5a968aa7-1aaf\"",
+			"fetched": 1522009506415
+		}
+	},
+	"_rev": "10-cc2152c2366df2a9",
+	"readme": "[![Build Status](https://travis-ci.org/nestjs/schematics.svg?branch=master)](https://travis-ci.org/nestjs/schematics)\n# @nestjs/schematics\nNestjs project and architecture element generation based on @angular-dekit/schematics engine\n\n## Build :\n- `git clone https://github.com/nestjs/schematics.git`\n\n### Steps with Docker\nin the schematics folder :\n- `make prepare`\n- `make build`\n\n### Steps without Docker\nin the schematics folder :\n- `npm install`\n- `rm -rf schematics && mkdir schematics`\n- `npm run -s build`\n- `cp -R src/* schematics`\n- `cp -R LICENSE package.json package-lock.json README.md .npmrc schematics`\n- `find src -name '*.js' -delete`\n\n## Usages:\n### With @angular-devkit/schematics-cli\ninstall @angular-devkit/schematics-cli globally.\n\nrun `schematics [path_to_nestjs_schematics]:<nestjs_schematic_name> [...options]`\n\n## Schematics:\n### application:\n| Option | description | required | default value |\n|--------|-------------|:--------:|:-------------:|\n| directory | The directory name to create the app in. | true | |\n\n### controller:\n| Option | description | required | default value |\n|--------|-------------|:--------:|:-------------:|\n| name | The name of the controller. | true | |\n\n### exception:\n| Option | description | required | default value |\n|--------|-------------|:--------:|:-------------:|\n| name | The name of the exception. | true | |\n\n### guard:\n| Option | description | required | default value |\n|--------|-------------|:--------:|:-------------:|\n| name | The name of the guard. | true | |\n\n### interceptor:\n| Option | description | required | default value |\n|--------|-------------|:--------:|:-------------:|\n| name | The name of the interceptor. | true | |\n\n### middleware:\n| Option | description | required | default value |\n|--------|-------------|:--------:|:-------------:|\n| name | The name of the middleware. | true | |\n\n### module:\n| Option | description | required | default value |\n|--------|-------------|:--------:|:-------------:|\n| name | The name of the module. | true | |\n\n### pipe:\n| Option | description | required | default value |\n|--------|-------------|:--------:|:-------------:|\n| name | The name of the pipe. | true | |\n\n### service:\n| Option | description | required | default value |\n|--------|-------------|:--------:|:-------------:|\n| name | The name of the service. | true | |\n"
+}
